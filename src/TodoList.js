@@ -14,7 +14,7 @@ export class TodoList extends React.Component {
         return (
             <ul>
             {this.props.todoList.map((item) =>
-                <Todo key={item.text.toString()} text={item.text} priority={item.priority} dueDate={item.dueDate}/>
+                <Todo key={item.dueDate} text={item.text} priority={item.priority} dueDate={item.dueDate}/>
               )
             }
 
